@@ -1,0 +1,134 @@
+[
+	{
+		"name_ru": "Магазин Кубик",
+		"name_ua": "Магазин Кубик",
+		"name_en": "Smartcube Shop",
+		"website": "https://kubik.in.ua",
+		"address_ru": "Киев, Антоновича, 169",
+		"address_ua": "Київ, Антоновича, 169",
+		"address_en": "Kyiv, Antonovycha Str, 169",
+		"coords": [50.414600, 30.522719],
+		"gmap": "https://g.page/kubik-in-ua?share"
+	},
+	{
+		"name_ru": "Мозгус",
+		"name_ua": "Мозгус",
+		"name_en": "Mozgus",
+		"website": "https://mozgus.com.ua",
+		"address_ru": "Киев, Институтская, 2",
+		"address_ua": "Київ, Інститутська, 2",
+		"address_en": "Kyiv, Instytutska Str, 2",
+		"coords": [50.449882, 30.525990],
+		"gmap": "https://goo.gl/maps/BAuJD91wH2DWy22T7"
+	},
+	{
+		"name_ru": "CBgames",
+		"name_ua": "CBgames",
+		"name_en": "CBgames",
+		"website": "https://cbgames.com.ua",
+		"address_ru": "Киев, Еленовская, 16",
+		"address_ua": "Київ, Оленівська, 16",
+		"address_en": "Kyiv, Olenivska Str, 16",
+		"coords": [50.4722088, 30.5024968],
+		"gmap": "https://goo.gl/maps/joo54w1QsiDwNp7M9"
+	},
+	{
+		"name_ru": "Rozum",
+		"name_ua": "Розум",
+		"name_en": "Rozum",
+		"website": "https://rozum.com.ua",
+		"address_ru": "Харьков, ул. Сумская, 45",
+		"address_ua": "Харків, вул. Сумська, 45",
+		"address_en": "Kharkiv, Sumska Str, 16",
+		"coords": [50.0064048, 36.2371576],
+		"gmap": "https://goo.gl/maps/ib2AUG1w3GnK13zR7"
+	},
+	{
+		"name_ru": "Neuron Toys",
+		"name_ua": "Neuron Toys",
+		"name_en": "Neuron Toys",
+		"website": "https://neuron-toys.com",
+		"address_ru": "Харьков, проспект Гагарина, 20а",
+		"address_ua": "Харків, проспект Гагаріна, 20а",
+		"address_en": "Kharkiv, Gagarina, 16",
+		"coords": [49.9815295,36.2436306],
+		"gmap": "https://goo.gl/maps/g1St1TAqdPiksx8B9"
+	},
+	{
+		"name_ru": "Тедди",
+		"name_ua": "Тедди",
+		"name_en": "Teddy",
+		"website": "https://teddy.ua",
+		"address_ru": "Днепр, проспект Дмитрия Яворницкого, 24",
+		"address_ua": "Дніпро, проспект Дмитра Яворницького, 24",
+		"address_en": "Dnipro, Dmitra Yavornickogo, 24",
+		"coords": [48.4582361,35.0576553],
+		"gmap": "https://goo.gl/maps/QEaPxKht55PQ5ncy5"
+	},
+	{
+		"name_ru": "GoodToys",
+		"name_ua": "GoodToys",
+		"name_en": "GoodToys",
+		"website": "https://goodtoys.com.ua",
+		"address_ru": "Киев, ул. Пожарского, 2",
+		"address_ua": "Київ, вул. Пожарського, 2",
+		"address_en": "Kyiv, Pozharskogo str, 2",
+		"coords": [50.4506254,30.6229533],
+		"gmap": "https://goo.gl/maps/TrM3eqQZz5r4kf428"	
+	},
+	{
+		"name_ru": "Кошара",
+		"name_ua": "Кошара",
+		"name_en": "Koshara",
+		"website": "https://koshara.prom.ua",
+		"address_ru": "Киев, ул. Бойчука, 43, офис 3",
+		"address_ua": "Київ, вул. Бойчука, 43, оф. 3",
+		"address_en": "Kyiv, Boychuka str, 2",
+		"coords": [50.4036788,30.5541351],
+		"gmap": "https://goo.gl/maps/Vwt3srxbS8fqee9x9"	
+	},
+	{
+		"name_ru": "Розумашка",
+		"name_ua": "Розумашка",
+		"name_en": "Rozumachka",
+		"website": "http://rozumashka.com.ua",
+		"address_ru": "Киев, Столичное шоссе, 103.",
+		"address_ua": "Київ, Столічне шосе, 103.",
+		"address_en": "Kyiv, Stolichnaya road, 103",
+		"coords": [50.3411057,30.5482311],
+		"gmap": "https://goo.gl/maps/ixKvm2HkU8WZHjMU9"	
+	},
+	{
+		"name_ru": "Лелекан",
+		"name_ua": "Лелекан",
+		"name_en": "Lelekan",
+		"website": "https://lelekan.com.ua",
+		"address_ru": "Львов, ул.Рубчака, 21 Б",
+		"address_ua": "Львів, вул.Рубчака, 21 Б",
+		"address_en": "Lviv, Rubchaka str, 21B",
+		"coords": [49.8059792,24.0087023],
+		"gmap": "https://goo.gl/maps/Wzj8VH2uURpnFHMaA"	
+	},
+	{
+		"name_ru": "Видеогалактика",
+		"name_ua": "Відеогалактика",
+		"name_en": "Videogalaktika",
+		"website": "",
+		"address_ru": "Тернополь, ул. Черновола, 15",
+		"address_ua": "Тернопіль, вул. Черновола, 15",
+		"address_en": "Ternopil, Chernovola str, 15",
+		"coords": [49.5538813,25.6002113],
+		"gmap": "https://goo.gl/maps/Dr5SzzadRm5tvRuV7"	
+	},
+	{
+		"name_ru": "Дом игр",
+		"name_ua": "Будинок ігор",
+		"name_en": "Toys house",
+		"website": "https://domigri.com.ua",
+		"address_ru": "Николаев, ул. Московская, 40/2",
+		"address_ua": "Миколаїв, вул. Московска, 40/2",
+		"address_en": "Mikolayiv, Moskovska str 40/2",
+		"coords": [46.9669958,31.9913256],
+		"gmap": "https://goo.gl/maps/gHT9KTg4cqeME14a8"
+	}
+]

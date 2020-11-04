@@ -1,0 +1,70 @@
+<?
+	session("admin", "false");
+
+	if ($request == "/ru" || $request == "/ua" || $request == "/en") {
+		$code = str_replace("/", null, $request);
+		session("lang", $code);
+		header('Location: /');
+		exit();
+	}  
+	
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="/editable.css" />
+	<link rel="stylesheet" href="/template/template.css" />
+	<script defer src="/runtime.js"></script>
+	<script src="https://www.google.com/recaptcha/api.js"></script>
+	
+</head>
+
+<body>
+	<div id="meta"><?=$data->show("seo")?></div>
+	<header>
+		<div class="container">
+		
+			<a href="/" class="logo_mob"><?=$data->show("/header/logo_mob")?></a>
+			<a href="/" class="logo"><?=$data->show("/header/logo")?></a>
+			<div class="header_right">
+				<a href="#" class="gamburger">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 112">
+						<path d="M112,6H12a12,12,0,0,0,0,24H112a12,12,0,0,0,0-24Z" transform="translate(0 -6)" />
+						<path d="M112,50H12a12,12,0,0,0,0,24H112a12,12,0,0,0,0-24Z" transform="translate(0 -6)" />
+						<path d="M112,94H12a12,12,0,0,0,0,24H112a12,12,0,0,0,0-24Z" transform="translate(0 -6)" />
+					</svg>
+				</a>
+				<nav class="top_nav">
+					<ul>
+						<li><?=$data->show("/header/m1")?></li>
+
+						<li><?=$data->show("/header/m2")?></li>
+
+						<li><?=$data->show("/header/m3")?></li>
+
+						<li><?=$data->show("/header/m4")?></li>
+					</ul>
+					<div class="lang_mob">
+						<a href="/ua">Укр</a>
+						<a href="/ru">Рус</a>
+						<a href="/en">Eng</a>
+					</div>
+				</nav>
+				<div class="lang">
+					<a href="/ua">Укр</a>
+					<a href="/ru">Рус</a>
+					<a href="/en">Eng</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<banner>
+		<div class="slide" style="background-image: url(../images/slide_1.jpg);"></div>
+		<div class="banner_text"><?=$data->show("banner-text")?></div>	
+	</banner>
+	<content>
+		<div class="container">

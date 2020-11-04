@@ -1,0 +1,136 @@
+<?php require_once("template/header.html")?>
+
+<section class="about_project" id="project">
+	<div>
+		<?=$data->show("/about/h1")?>
+		<div class="about_area">
+			<?=$data->show("/about/img1")?>
+			<?=$data->show("/about/text1")?>
+		</div>
+	</div>
+	<div class="about_img_right"><?=$data->show("/about/img2")?></div>
+	<div>
+		<?=$data->show("/about/h2")?>
+		<div class="about_area">
+			<?=$data->show("/about/img3")?>
+			<?=$data->show("/about/text2")?>
+		</div>
+	</div>
+	<ul class="about_list_right">
+		<?=$data->show("/about/text3")?>
+	</ul>
+</section>
+
+<section class="catalog_mini" id="games">
+	<a href="#" class="filter_btn" ><?=$data->show("/catalog/btn_filter")?></a>
+	<div class="catalog_tabs">
+		<a href="#" class="tab" data-filter="all">
+			<?=$data->show("/catalog/t1")?>
+		</a>
+		<a href="#" class="tab" data-filter="rope">
+			<?=$data->show("/catalog/t2")?>
+		</a>
+		<a href="#" class="tab" data-filter="flat">
+			<?=$data->show("/catalog/t3")?>
+		</a>
+		<a href="#" class="tab" data-filter="volumetric">
+			<?=$data->show("/catalog/t4")?>
+		</a>
+	</div>
+	<div class="datas"><?=$data->show("/catalog/mini")?></div>
+	<div class="catalog_mini_container" id="mini">
+		<div class="item_mini $view">
+			<img src="images/clock.jpg">
+			<h2>$name</h2>
+			<div class="item_mini_description">
+				<div>
+					<span><?=$data->show("/catalog/mini/age")?></span>
+					<span>$age</span>
+				</div>
+				<div>
+					<span><?=$data->show("/catalog/mini/material")?></span>
+					<span>$material</span>
+				</div>
+				<div class="task">$task</div>
+			</div>
+			<a href="#" class="btn_buy">
+				<img src="/images/basket.png">
+			</a>
+		</div>
+	</div>
+
+</section>
+<section class="bag">
+	<?=$data->show("/bag/img")?>
+	<div>
+		<?=$data->show("/bag/text")?>
+		<a href="#" class="btn_buy_large">придбати</a>
+	</div>
+</section>
+</div>
+<section class="catalog_board_game">
+	<h3><?=$data->show("/catalog/board/h")?></h3>
+	<div class="catalog_board_descr"><?=$data->show("/catalog/board/desc")?></div>
+	<div class="datas"><?=$data->show("/catalog/board")?></div>
+	<div class="catalog_board_container" id="board">
+		<div class="item_board">
+			<img src="$src">
+			<h2>$name</h2>
+			<div class="item_board_description">
+				<div>
+					<span><?=$data->show("/catalog/board/complexity")?></span>
+					<span>$complexity</span>
+				</div>
+				<div class="task">$task</div>
+			</div>
+			<a href="$url" class="btn_buy">
+				<img src="/images/basket.png">
+			</a>
+		</div>
+
+	</div>
+</section>
+<div class="container">
+	<section class="catalog_xl">
+		<h3><?=$data->show("/catalog/xl/h")?></h3>
+		<div class="catalog_xl_descr"><?=$data->show("/catalog/xl/desc")?></div>
+		<div class="datas"><?=$data->show("/catalog/xl")?></div>
+		<div class="catalog_xl_container" id="xl">
+			<div class="item_xl">
+				<img src="images/clock.jpg">
+				<h2>$name</h2>
+				<div class="item_xl_description">
+					<div>
+						<span><?=$data->show("/catalog/xl/age")?></span>
+						<span>$age</span>
+					</div>
+					<div>
+						<span><?=$data->show("/catalog/xl/complexity")?></span>
+						<span>$complexity</span>
+					</div>
+					<div class="task">$task</div>
+				</div>
+				<a href="#" class="btn_buy">
+					<img src="/images/basket.png">
+				</a>
+			</div>
+	</section>
+
+	<section class="where_buy" id="buy">
+		<h2><?=$data->show("/buy/h")?></h2>
+		<map id="map"></map>
+	</section>
+
+	<section class="contacts" id="contacts">
+		<h2><?=$data->show("/contacts/h")?></h2>
+		<p><?=$data->show("/contacts/text")?></p>
+		<div class="contacts_container">
+			<?=$data->show("/contacts/r1")?>
+			<?=$data->show("/contacts/r2")?>
+			<?=$data->show("/contacts/r3")?>
+			<?=$data->show("/contacts/r4")?>
+		</div>
+
+	</section>
+
+	<?php require_once("template/footer.html")?>

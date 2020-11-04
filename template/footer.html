@@ -1,0 +1,39 @@
+</div>
+</content>
+<footer>
+	<div class="container">
+		<div class="footer_datas">
+			<div class="address"><?=$data->show("/footer/address")?></div>
+			<div class="phone" <?=$data->show("/footer/phone")?></div>
+			<div class="email"><?=$data->show("/footer/email")?></div>
+		</div>
+
+		<form action="../email.php" class="footer_form" id="contact_form">
+			<h2>Форма зворотнього звязку</h2>
+			<ul class="form_container">
+				<li>
+					<label for="name"><?=$data->show("/footer/form/name")?></label>
+					<input type="text" id="name" name="name">
+				</li>
+				<li>
+					<label for="phone"><?=$data->show("/footer/form/phone")?></label>
+					<input type="text" id="phone" name="phone">
+				</li>
+				<li>
+					<label for="email"><?=$data->show("/footer/form/email")?></label>
+					<input type="text" id="email" name="email">
+				</li>
+				<label for="textarea"><?=$data->show("/footer/form/textarea")?></label>
+				<textarea id="textarea" name="comment"></textarea>
+				<li>
+					<button type="submit"  class="g-recaptcha" data-sitekey="6Lew1NMZAAAAAJnBUszzUUzCP-SYfY1nWpKqrAs3" data-callback="onSubmit" data-action="submit"><?=$data->show("/footer/form/btn")?></button>
+				</li>
+			</ul>
+		</form>
+	</div>
+	<div class="copy">
+		<?=$data->show("/footer/copy")?>
+	</div>
+</footer>
+</body>
+</html>
