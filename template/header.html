@@ -1,19 +1,23 @@
 <?
+	session("admin", "false");
 	if ($request == "/ru" || $request == "/ua" || $request == "/en") {
 		$code = str_replace("/", null, $request);
 		session("lang", $code);
 		header('Location: /');
 		exit();
 	}  
-	
 ?>
 
 <!DOCTYPE html>
 <html>
 
-<head>
+<head id="head">
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title></title>
+	<meta name="description">
+	<meta name="keywords">
 
 	<link rel="stylesheet" href="/editable.css" />
 	<link rel="stylesheet" href="/template/template.css" />

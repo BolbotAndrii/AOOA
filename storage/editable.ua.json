@@ -62,6 +62,6 @@
     "\/catalog\/board\/complexity": "Складність: ",
     "\/catalog\/xl\/complexity": "Складність: ",
     "\/catalog\/xl\/age": "Вік: ",
-    "seo": "<title><\/title>\n<meta name=\"description\" content=\"\">\n<meta name=\"keywords\" content=\"\">",
+    "seo": "<script>\n     const seo ={\n          \"title\":\"Zamorochka\",\n          \"description\": \"this is zamorochka\",\n          \"keywords\":\"word zamorochka\"          \n     }\n<\/script>",
     "\/bag\/btn": "<a href=\"#\" class=\"btn_buy_large\">придбати<\/a>"
 }

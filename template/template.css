@@ -678,7 +678,7 @@ map {
 	width: var(--content-widht);
 	margin: 0 auto;
 	padding: 0rem 4rem;
-	height: 0;
+	height: 100%;
 }
 
 #meta data[contenteditable] {
@@ -687,12 +687,19 @@ map {
     padding-left: 4rem !important;
 	box-sizing: border-box;
 	display: block;
+	min-height: 1em;
+	
 }
 
-#meta data[contenteditable=true]::before{
+#meta data {
+	min-height: 0;
+}
+
+#meta data[contenteditable=true]{
 	top: 0;
 	border-color: red;
 	border-style: solid;
+
 }
 
 #meta data[contenteditable]::before {

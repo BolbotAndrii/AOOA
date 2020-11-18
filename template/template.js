@@ -16,8 +16,15 @@ $("a").on("click", (event) => {
 	}
 });
 
+const setSeo = () => {
+	document.title = seo.title;
+	$("meta[name=description]").attr("content", seo.description);
+	$("meta[name=keywords]").attr("content", seo.keywords);
+}
+setSeo();
 
-if  ( typeof mini !== "undefined" && typeof board !== "undefined" && typeof xl !== "undefined" ) {
+
+if (typeof mini !== "undefined" && typeof board !== "undefined" && typeof xl !== "undefined") {
 	const templateMini = $("#mini").html();
 	const miniContainer = $("#mini");
 
@@ -48,23 +55,23 @@ if  ( typeof mini !== "undefined" && typeof board !== "undefined" && typeof xl !
 
 	showItems(mini, templateMini, miniContainer);
 	showItems(board, templateBoard, boardContainer);
-	showItems(xl, templateXl, XLContainer);	
+	showItems(xl, templateXl, XLContainer);
 }
 
 const tabs = document.getElementsByClassName('tab');
 const items = document.getElementsByClassName('item_mini');
 
 const showElements = (type) => {
-	for ( let i = 0 ; i < items.length ; i++ ) {
+	for (let i = 0; i < items.length; i++) {
 		let item = items[i];
-		if ( !item.classList.contains(type)) {
+		if (!item.classList.contains(type)) {
 			item.classList.add('disactive');
 		} else {
 			item.classList.remove('disactive');
-		} 
+		}
 		if (type === 'all') {
 			item.classList.remove('disactive');
-		} 	
+		}
 	}
 }
 
@@ -73,8 +80,8 @@ function onSubmit(token) {
 }
 
 const currentTab = (index) => {
-	for(let i = 0; i < tabs.length; i++) {
-		if (i === index ) {
+	for (let i = 0; i < tabs.length; i++) {
+		if (i === index) {
 			tabs[index].classList.add('active')
 		} else {
 			tabs[i].classList.remove('active')
@@ -86,10 +93,10 @@ for (let i = 0; i < tabs.length; i++) {
 	currentTab(0);
 	tabs[i].addEventListener('click', (e) => {
 		e.preventDefault();
-		showElements(tabs[i].dataset.filter);	
-		currentTab(i);	
+		showElements(tabs[i].dataset.filter);
+		currentTab(i);
 	}, false);
-	
+
 }
 
 $('.filter_btn').click((e) => {
@@ -97,7 +104,7 @@ $('.filter_btn').click((e) => {
 	$('.catalog_tabs').slideToggle('fast');
 });
 
-const showHideCountItems = ( container, item, limit ) => {
+const showHideCountItems = (container, item, limit) => {
 	const countItems = $(item).length;
 	const wrapper = $(container);
 
@@ -120,13 +127,13 @@ const showHideCountItems = ( container, item, limit ) => {
 		wrapper.append(btn);
 	}
 
-	$( item ).slice(limit).hide();
+	$(item).slice(limit).hide();
 
-	$(btn).click( (e) => {
+	$(btn).click((e) => {
 		e.preventDefault();
 		$(item).slice(limit).slideToggle('fast');
-		
-		if ( !wrapper.hasClass('open') ) {
+
+		if (!wrapper.hasClass('open')) {
 			wrapper.addClass('open');
 			switch (lang) {
 				case 'ua':
@@ -139,7 +146,7 @@ const showHideCountItems = ( container, item, limit ) => {
 					btn.innerHTML = "Hide";
 					break;
 
-		
+
 			}
 		}
 		else {
@@ -159,9 +166,9 @@ const showHideCountItems = ( container, item, limit ) => {
 	});
 }
 
-showHideCountItems( '.catalog_mini', '.item_mini', 8 );
-showHideCountItems( '.catalog_board_game', '.item_board', 3 );
-showHideCountItems( '.catalog_xl', '.item_xl', 6 );
+showHideCountItems('.catalog_mini', '.item_mini', 8);
+showHideCountItems('.catalog_board_game', '.item_board', 3);
+showHideCountItems('.catalog_xl', '.item_xl', 6);
 
 // mobile menu
 const toggleBodyFixed = () => {
@@ -173,7 +180,7 @@ const toggleBodyFixed = () => {
 	}
 }
 
-$('.gamburger').click( () => {
+$('.gamburger').click(() => {
 	$('.top_nav').css('top', $('header').height() + "px");
 	$('.top_nav').toggleClass('active');
 	toggleBodyFixed();
@@ -183,13 +190,13 @@ $('.gamburger').click( () => {
 const currentLang = () => {
 	let langMob = document.getElementsByClassName('lang_mob')[0].children;
 	let langDesc = document.getElementsByClassName('lang')[0].children;
-	
-	for ( let i = 0; i < langDesc.length ; i++ ) {
+
+	for (let i = 0; i < langDesc.length; i++) {
 		const item = langDesc[i].getAttribute('href').replace(/\//g, '');
-		if ( item === lang ) {
+		if (item === lang) {
 			langDesc[i].classList.add('active');
 			langMob[i].classList.add('active');
-		}	
+		}
 	}
-} 
+}
 currentLang();
