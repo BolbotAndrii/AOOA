@@ -22,7 +22,7 @@
 </section>
 
 <section class="catalog_mini" id="games">
-	<a href="#" class="filter_btn" ><?=$data->show("/catalog/btn_filter")?></a>
+	<a href="#" class="filter_btn"><?=$data->show("/catalog/btn_filter")?></a>
 	<div class="catalog_tabs">
 		<a href="#" class="tab" data-filter="all">
 			<?=$data->show("/catalog/t1")?>
@@ -64,7 +64,8 @@
 	<?=$data->show("/bag/img")?>
 	<div>
 		<?=$data->show("/bag/text")?>
-		<a href="#" class="btn_buy_large">придбати</a>
+		<?=$data->show("/bag/btn")?>
+
 	</div>
 </section>
 </div>

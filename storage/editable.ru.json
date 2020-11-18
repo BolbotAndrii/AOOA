@@ -62,5 +62,6 @@
     "\/catalog\/board\/complexity": "Складність: ",
     "\/catalog\/xl\/complexity": "Складність: ",
     "\/catalog\/xl\/age": "Вік: ",
-    "seo": "<title><\/title>\n<meta name=\"description\" content=\"\">\n<meta name=\"keywords\" content=\"\">"
+    "seo": "<title><\/title>\n<meta name=\"description\" content=\"\">\n<meta name=\"keywords\" content=\"\">",
+    "\/bag\/btn": "<a href=\"#\" class=\"btn_buy_large\">придбати<\/a>"
 }
