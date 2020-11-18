@@ -61,5 +61,6 @@
     "\/catalog\/mini\/task": "Завдання:",
     "\/catalog\/board\/complexity": "Складність: ",
     "\/catalog\/xl\/complexity": "Складність: ",
-    "\/catalog\/xl\/age": "Вік: "
+    "\/catalog\/xl\/age": "Вік: ",
+    "seo": "<title><\/title>\n<meta name=\"description\" content=\"\">\n<meta name=\"keywords\" content=\"\">"
 }
