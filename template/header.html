@@ -1,6 +1,4 @@
 <?
-	session("admin", "true");
-
 	if ($request == "/ru" || $request == "/ua" || $request == "/en") {
 		$code = str_replace("/", null, $request);
 		session("lang", $code);
@@ -12,6 +10,7 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,14 +19,14 @@
 	<link rel="stylesheet" href="/template/template.css" />
 	<script defer src="/runtime.js"></script>
 	<script src="https://www.google.com/recaptcha/api.js"></script>
-	
+
 </head>
 
 <body>
 	<div id="meta"><?=$data->show("seo")?></div>
 	<header>
 		<div class="container">
-		
+
 			<a href="/" class="logo_mob"><?=$data->show("/header/logo_mob")?></a>
 			<a href="/" class="logo"><?=$data->show("/header/logo")?></a>
 			<div class="header_right">
@@ -64,7 +63,7 @@
 	</header>
 	<banner>
 		<div class="slide" style="background-image: url(../images/slide_1.jpg);"></div>
-		<div class="banner_text"><?=$data->show("banner-text")?></div>	
+		<div class="banner_text"><?=$data->show("banner-text")?></div>
 	</banner>
 	<content>
 		<div class="container">
